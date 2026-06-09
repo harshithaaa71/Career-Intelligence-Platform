@@ -1,5 +1,6 @@
 import streamlit as st
 from pathlib import Path
+import PyPDF2
 
 # -----------------------------
 # PAGE CONFIG
@@ -28,17 +29,10 @@ load_css()
 # -----------------------------
 # SIDEBAR
 # -----------------------------
-st.sidebar.markdown(
-    """
-    # 🚀 Career Intelligence
+st.markdown("# 🚀 Career Intelligence Platform")
 
-    Welcome Harshitha!
-
-    Navigate through the platform below.
-    """
-)
-page = st.sidebar.radio(
-    "Navigation",
+page = st.radio(
+    "",
     [
         "🏠 Home",
         "📄 Resume Analyzer",
@@ -46,7 +40,8 @@ page = st.sidebar.radio(
         "⚠ Skill Gap Analysis",
         "🎯 Career Recommendations",
         "📈 Market Insights"
-    ]
+    ],
+    horizontal=True
 )
 
 # =============================
@@ -150,6 +145,7 @@ elif page == "📄 Resume Analyzer":
 
     import sys
     from pathlib import Path
+    import PyPDF2
 
     project_root = Path(__file__).parent.parent
     sys.path.insert(0, str(project_root))
@@ -159,11 +155,30 @@ elif page == "📄 Resume Analyzer":
     st.title("📄 Resume Analyzer")
 
     st.write(
-        "Paste your resume text below and analyze your skills."
+        "Upload your resume PDF or paste resume text below."
     )
 
+    uploaded_file = st.file_uploader(
+        "Upload Resume (PDF)",
+        type=["pdf"]
+    )
+
+    resume_text = ""
+
+    if uploaded_file is not None:
+
+        pdf_reader = PyPDF2.PdfReader(uploaded_file)
+
+        for page in pdf_reader.pages:
+
+            text = page.extract_text()
+
+            if text:
+                resume_text += text
+
     resume_text = st.text_area(
-        "Resume Content",
+        "Or Paste Resume Content",
+        value=resume_text,
         height=250
     )
 
@@ -206,10 +221,10 @@ elif page == "📄 Resume Analyzer":
                 st.write(f"✅ {skill}")
 
         else:
+
             st.warning(
                 "No matching skills found."
             )
-
 # =============================
 # JOB MATCH
 # =============================
