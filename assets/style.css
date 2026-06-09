@@ -1,0 +1,364 @@
+/* ==========================
+   MAIN APP
+========================== */
+
+.stApp {
+    background-color: #F8FAFC;
+    color: #1F2937;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #7C8CF8,
+        #A8B5FF
+    );
+
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    color: white !important;
+    font-size: 42px;
+}
+
+.hero p {
+    color: white !important;
+    font-size: 18px;
+}
+
+/* ==========================
+   ALL NORMAL TEXT
+========================== */
+
+p,
+li,
+span,
+label,
+div {
+    color: #1F2937 !important;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1F2937 !important;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+section[data-testid="stSidebar"] {
+    background-color: #EEF2FF;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #1F2937 !important;
+}
+
+section[data-testid="stSidebar"] h1 {
+    color: #4F46E5 !important;
+}
+
+/* ==========================
+   METRIC CARDS
+========================== */
+
+[data-testid="stMetric"] {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+[data-testid="stMetricLabel"] {
+    color: #1F2937 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #4F46E5 !important;
+}
+
+/* ==========================
+   INFO BOXES
+========================== */
+
+[data-testid="stAlert"] {
+    border-radius: 15px;
+    color: #1F2937 !important;
+}
+
+/* ==========================
+   SUCCESS BOX
+========================== */
+
+[data-testid="stNotification"] {
+    color: #1F2937 !important;
+}
+
+/* ==========================
+   TEXT AREA
+========================== */
+
+textarea {
+    background-color: white !important;
+    color: #1F2937 !important;
+    font-size: 16px !important;
+}
+
+/* Streamlit Text Area */
+
+[data-testid="stTextArea"] textarea {
+    background-color: white !important;
+    color: #1F2937 !important;
+    border-radius: 10px !important;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.stButton > button {
+    background-color: #7C8CF8 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    font-weight: bold !important;
+}
+
+.stButton > button:hover {
+    background-color: #6B7CF6 !important;
+}
+
+/* ==========================
+   TEXT INPUTS
+========================== */
+
+/* Text Input Fix */
+
+.stTextInput input {
+    background-color: white !important;
+    color: #1F2937 !important;
+    border: 2px solid #D1D5DB !important;
+    border-radius: 10px !important;
+}
+
+/* Placeholder text */
+
+.stTextInput input::placeholder {
+    color: #6B7280 !important;
+}
+
+/* ==========================
+   GREEN SKILL TAGS
+========================== */
+
+.skill-tag-green {
+
+    background-color: #DCFCE7;
+
+    color: #166534 !important;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    margin: 5px;
+
+    display: inline-block;
+
+    font-weight: 600;
+}
+
+/* ==========================
+   RED SKILL TAGS
+========================== */
+
+.skill-tag-red {
+
+    background-color: #FEE2E2;
+
+    color: #B91C1C !important;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    margin: 5px;
+
+    display: inline-block;
+
+    font-weight: 600;
+}
+/* Selectbox */
+
+.stSelectbox div[data-baseweb="select"] {
+    background: white !important;
+    color: #1e293b !important;
+    border-radius: 12px !important;
+}
+
+.stSelectbox div[data-baseweb="select"] * {
+    color: #1e293b !important;
+}
+
+/* Dropdown menu */
+
+div[role="listbox"] {
+    background-color: white !important;
+    color: #1e293b !important;
+}
+
+div[role="option"] {
+    background-color: white !important;
+    color: #1e293b !important;
+}
+
+div[role="option"]:hover {
+    background-color: #eef2ff !important;
+}
+
+/* Text Input */
+.stTextInput input {
+    background-color: white !important;
+    color: #1e293b !important;
+    border: 2px solid #c7d2fe !important;
+    border-radius: 12px !important;
+}
+
+/* Text Area */
+.stTextArea textarea {
+    background-color: white !important;
+    color: #1e293b !important;
+    border: 2px solid #c7d2fe !important;
+    border-radius: 12px !important;
+}
+
+/* Select Box */
+.stSelectbox div[data-baseweb="select"] {
+    background-color: white !important;
+    color: #1e293b !important;
+}
+
+.stSelectbox div[data-baseweb="select"] * {
+    color: #1e293b !important;
+}
+
+/* Dropdown menu */
+div[role="listbox"] {
+    background-color: white !important;
+}
+
+div[role="option"] {
+    background-color: white !important;
+    color: #1e293b !important;
+}
+
+div[role="option"]:hover {
+    background-color: #eef2ff !important;
+}
+
+/* ====================================
+   STREAMLIT SELECTBOX FIX
+==================================== */
+
+[data-baseweb="popover"] {
+    background-color: white !important;
+}
+
+[data-baseweb="menu"] {
+    background-color: white !important;
+}
+
+[data-baseweb="menu"] * {
+    color: #1e293b !important;
+}
+
+[data-baseweb="select"] {
+    background-color: white !important;
+    color: #1e293b !important;
+}
+
+[data-baseweb="select"] * {
+    color: #1e293b !important;
+}
+
+ul[role="listbox"] {
+    background-color: white !important;
+}
+
+ul[role="listbox"] li {
+    background-color: white !important;
+    color: #1e293b !important;
+}
+
+ul[role="listbox"] li:hover {
+    background-color: #eef2ff !important;
+    color: #1e293b !important;
+}
+/* ===== SELECTBOX FINAL FIX ===== */
+
+[data-testid="stSelectbox"] div {
+    background-color: white !important;
+    color: #1e293b !important;
+}
+
+[data-testid="stSelectbox"] svg {
+    fill: #1e293b !important;
+}
+
+[data-baseweb="select"] {
+    background-color: white !important;
+    color: #1e293b !important;
+    border: 2px solid #c7d2fe !important;
+    border-radius: 12px !important;
+}
+
+[data-baseweb="select"] * {
+    color: #1e293b !important;
+    background-color: white !important;
+}
+/* ===== FINAL DROPDOWN MENU FIX ===== */
+
+[data-baseweb="popover"] {
+    background: white !important;
+}
+
+[data-baseweb="menu"] {
+    background: white !important;
+}
+
+[data-baseweb="menu"] ul {
+    background: white !important;
+}
+
+[data-baseweb="menu"] li {
+    background: white !important;
+    color: #1e293b !important;
+}
+
+[data-baseweb="menu"] li:hover {
+    background: #eef2ff !important;
+    color: #1e293b !important;
+}
+
+[data-baseweb="menu"] div {
+    color: #1e293b !important;
+}
