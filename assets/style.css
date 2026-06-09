@@ -362,3 +362,75 @@ ul[role="listbox"] li:hover {
 [data-baseweb="menu"] div {
     color: #1e293b !important;
 }
+
+/* Top Navigation */
+
+div[role="radiogroup"] {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+div[role="radiogroup"] label {
+    background: white;
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: 1px solid #c7d2fe;
+    font-weight: 600;
+}
+
+div[role="radiogroup"] label:hover {
+    background: #eef2ff;
+}
+/* ==========================
+   FILE UPLOADER
+========================== */
+
+[data-testid="stFileUploader"] {
+    background-color: white !important;
+    border: 2px solid #c7d2fe !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+}
+
+[data-testid="stFileUploader"] * {
+    color: #1e293b !important;
+}
+
+[data-testid="stFileUploaderDropzone"] {
+    background-color: white !important;
+    border: 2px dashed #c7d2fe !important;
+}
+
+[data-testid="stFileUploaderDropzone"] * {
+    color: #1e293b !important;
+}
+section[data-testid="stFileUploaderDropzone"] {
+    background: white !important;
+    color: #1e293b !important;
+}
+
+section[data-testid="stFileUploaderDropzone"] * {
+    color: #1e293b !important;
+}
+/* Force file uploader white */
+
+[data-testid="stFileUploader"] section {
+    background: white !important;
+}
+
+[data-testid="stFileUploader"] div {
+    background: white !important;
+    color: #1e293b !important;
+}
+
+[data-testid="stFileUploader"] button {
+    background: #EEF2FF !important;
+    color: #1e293b !important;
+    border: 1px solid #C7D2FE !important;
+}
+
+[data-testid="stFileUploader"] svg {
+    color: #4F46E5 !important;
+}
